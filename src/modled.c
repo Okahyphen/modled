@@ -40,7 +40,7 @@ static void print_led_list(void)
 	closedir(dir);
 }
 
-static int getargs(int argc, char **argv, struct led_args *args)
+static void getargs(int argc, char **argv, struct led_args *args)
 {
 	int opt;
 
@@ -66,8 +66,6 @@ static int getargs(int argc, char **argv, struct led_args *args)
 
 	if (optind != argc)
 		args->LED = argv[optind];
-
-	return 1;
 }
 
 static size_t read_to_buffer(const char *filename, size_t bsize, char *buffer)
