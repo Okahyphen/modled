@@ -1,0 +1,31 @@
+.TH MODLED 1
+.SH NAME
+modled \- modify LED
+.SH SYNOPSIS
+.B modled
+[\fB\-d\fR] [\fB\-h\fR] [\fB\-h\fR] [\fB\-b \fILEVEL\fR] [\fB\-t \fITRIGGER\fR] [\fILED\fR]
+.SH DESCRIPTION
+.B modled
+modifies the selected \fILED\fR.
+.SH OPTIONS
+.TP
+.BR \-d
+Displays a list of possible \fILED\fRs and exits the program.
+.TP
+.BR \-h
+Displays a simple usage dialog and exits the program.
+.TP
+.BR \-i
+Displays current information about the \fILED\fR. Always the final operation, ensuring all writes have occurred first.
+.TP
+.TP
+.BR \-b " "\fILEVEL\fR
+Modifies the \fBBRIGHTNESS\fR of the selected \fILED\fR. \fILEVEL\fR should be a value between \fB0\fR and \fBMAX_BRIGHTNESS\fR. \fBMAX_BRIGHTNESS\fR can be determined by executing \fBmodled -i\fR \fILED\fR.
+.TP
+.BR \-t " "\fIEVENT\fR
+Modifies the \fBTRIGGER\fR of the selected \fILED\fR. \fIEVENT\fR should be an event specified in the list provided by executing \fBmodled -i\fR \fILED\fR.
+.SH AUTHORS
+Written and maintained by Oka <yo@oka.io>.
+.SH COPYRIGHT
+.BR modled
+is available under the MIT license.
