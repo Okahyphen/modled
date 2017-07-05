@@ -1,10 +1,12 @@
-	modled
+modled
+------
 
-Modify LEDs using sysfs. Provides structured control over /sys/class/leds.
+Modify LEDs using sysfs. Provides simplified control over /sys/class/leds/.
 
 	make
 	make install
 
 	man modled
 
-MIT <yo@oka.io>
+-----------
+<yo@oka.io>
